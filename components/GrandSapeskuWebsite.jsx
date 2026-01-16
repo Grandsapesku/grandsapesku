@@ -87,12 +87,54 @@ export default function GrandSapeskuWebsite() {
             </li>
           </ol>
         </section>
-        {/* KONTAKT */}
-        <section className="bg-white p-10 rounded-3xl shadow-xl text-center">
-          <h2 className="text-3xl font-bold mb-6">Kontakt</h2>
-          <p className="text-lg">📞 777 911 611</p>
-          <p className="text-lg">✉️ grandsapesku@seznam.cz</p>
-          <p className="text-lg">📍 Praha</p>
+        {/* KONTAKT + FORMA */}
+        <section className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl">
+          <h2 className="text-3xl font-bold text-center">
+            Kontaktujte nás
+          </h2>
+
+          <form
+            className="grid gap-4 max-w-xl mx-auto"
+            action="https://formspree.io/f/mykkkewv"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Jméno"
+              className="border rounded-xl p-4"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              className="border rounded-xl p-4"
+              required
+            />
+
+            <textarea
+              name="message"
+              placeholder="Zpráva"
+              className="border rounded-xl p-4 min-h-[140px]"
+              required
+            />
+
+            <button
+              type="submit"
+              className="bg-red-600 hover:bg-red-700 transition text-white px-8 py-4 rounded-3xl w-fit mx-auto text-lg font-semibold"
+            >
+              Odeslat poptávku
+            </button>
+          </form>
+
+          <div className="text-center text-gray-700 mt-6 text-lg">
+            <p>📍 Praha</p>
+            <p>📞 777 911 611</p>
+            <p>✉️ grandsapesku@seznam.cz</p>
+            <p>🏢 GrandSapesku s.r.o.</p>
+          </div>
         </section>
       </main>
 
