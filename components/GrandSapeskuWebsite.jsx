@@ -7,9 +7,9 @@ export default function GrandSapeskuWebsite() {
       <header className="bg-white shadow relative">
         <div className="absolute inset-0">
           <img
-            src="/images/rezidencni-komplex.jpg"
-            alt="Rezidenční domy Praha"
-            className="w-full h-full object-cover"
+  src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=1920&q=80"
+  alt="Moderní rezidenční komplex – bytové domy v Praze"
+  className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
