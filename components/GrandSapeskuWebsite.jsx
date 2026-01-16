@@ -139,6 +139,30 @@ export default function GrandSapeskuWebsite() {
       </main>
 
       {/* FOOTER */}
+      {/* SEO TEXT */}
+        <section className="max-w-4xl mx-auto px-6 text-gray-700 text-lg leading-relaxed">
+          <h2 className="text-2xl font-bold mb-4">
+            Profesionální úklid garáží a společných prostor v Praze
+          </h2>
+
+          <p className="mb-4">
+            Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na
+            profesionální úklid podzemních garáží, bytových domů a společných
+            prostor v Praze a okolí. Spolupracujeme se SVJ, správci nemovitostí a
+            developerskými projekty.
+          </p>
+
+          <p className="mb-4">
+            Nabízíme strojové mytí garáží, odstranění olejových skvrn, pravidelný
+            úklid chodeb, schodišť, výtahů a vstupních prostor. Jsme plátci DPH,
+            máme pojištění odpovědnosti a pracujeme na základě smlouvy.
+          </p>
+
+          <p>
+            Pokud hledáte spolehlivou firmu na úklid garáží v Praze, neváhejte
+            nás kontaktovat. Rádi připravíme cenovou nabídku na míru.
+          </p>
+        </section>
       <footer className="text-center text-sm text-gray-500 py-8">
         © {new Date().getFullYear()} GrandSapesku s.r.o.
       </footer>
