@@ -48,7 +48,27 @@ export default function GrandSapeskuWebsite() {
             </li>
           </ul>
         </section>
+{/* PROC SPOLUPRACOVAT */}
+        <section className="grid gap-6">
+          <h2 className="text-3xl font-bold text-center">
+            Proč spolupracovat s námi
+          </h2>
 
+          <ul className="grid md:grid-cols-4 gap-6">
+            <li className="bg-white p-6 rounded-3xl shadow-lg text-center">
+              ✔️ Plátce DPH
+            </li>
+            <li className="bg-white p-6 rounded-3xl shadow-lg text-center">
+              ✔️ Pojištění odpovědnosti
+            </li>
+            <li className="bg-white p-6 rounded-3xl shadow-lg text-center">
+              ✔️ Smlouva a pravidelná fakturace
+            </li>
+            <li className="bg-white p-6 rounded-3xl shadow-lg text-center">
+              ✔️ Kvalita a spolehlivost
+            </li>
+          </ul>
+        </section>
         {/* KONTAKT */}
         <section className="bg-white p-10 rounded-3xl shadow-xl text-center">
           <h2 className="text-3xl font-bold mb-6">Kontakt</h2>
