@@ -35,16 +35,16 @@ export default function GrandSapeskuWebsite() {
           <h2 className="text-3xl font-bold text-center">Naše služby</h2>
           <ul className="grid md:grid-cols-2 gap-6">
             <li className="bg-white p-8 rounded-3xl shadow-lg">
-              🅿️ Profesionální úklid podzemních garáží
+              ✔️ Profesionální úklid podzemních garáží
             </li>
             <li className="bg-white p-8 rounded-3xl shadow-lg">
-              🏢 Úklid společných prostor bytových domů
+              ✔️ Úklid společných prostor bytových domů
             </li>
             <li className="bg-white p-8 rounded-3xl shadow-lg">
-              🚪 Úklid chodeb, schodišť a vstupů
+              ✔️ Úklid chodeb, schodišť a vstupů
             </li>
             <li className="bg-white p-8 rounded-3xl shadow-lg">
-              🧼 Strojové mytí podlah
+              ✔️ Strojové mytí podlah
             </li>
           </ul>
         </section>
