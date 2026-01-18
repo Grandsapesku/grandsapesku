@@ -21,6 +21,7 @@ export default function GrandSapeskuWebsite() {
           <p className="text-xl text-gray-200">GrandSapesku S.R.O.</p>
             <p className="text-xl text-gray-200">IČO: 17957486</p>
           <p className="text-xl text-gray-200">DIČ: CZ17957486</p>
+          <p className="text-xl text-gray-200">Adresa sídla: Za hrázi d. ev. 467, 155 31, Praha 5 - Lipence</p>
 
           <a
             href="tel:777911611"
@@ -103,11 +104,19 @@ export default function GrandSapeskuWebsite() {
             <input
               type="text"
               name="name"
-              placeholder="Jméno"
+              placeholder="Jméno / Přijmeni"
               className="border rounded-xl p-4"
               required
             />
 
+             <input
+              type="text"
+              name="name"
+              placeholder="Adresa"
+              className="border rounded-xl p-4"
+              required
+            />
+            
             <input
               type="email"
               name="email"
