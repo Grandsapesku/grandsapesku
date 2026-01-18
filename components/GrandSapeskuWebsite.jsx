@@ -18,8 +18,9 @@ export default function GrandSapeskuWebsite() {
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
             Profesionální úklid garáží a společných prostor<br />Praha a okolí
           </h1>
-          <p className="text-xl text-gray-200">GrandSapesku s.r.o.</p>
-            <p className="text-xl text-gray-200">IČO 17957486</p>
+          <p className="text-xl text-gray-200">GrandSapesku S.R.O.</p>
+            <p className="text-xl text-gray-200">IČO: 17957486</p>
+          <p className="text-xl text-gray-200">DIČ: CZ17957486</p>
 
           <a
             href="tel:777911611"
@@ -36,7 +37,7 @@ export default function GrandSapeskuWebsite() {
           <h2 className="text-3xl font-bold text-center">Naše služby</h2>
           <ul className="grid md:grid-cols-2 gap-6">
             <li className="bg-white p-8 rounded-3xl shadow-lg">
-              ✔️ Uklid podzemních garáží
+              ✔️ Úklid podzemních garáží
             </li>
             <li className="bg-white p-8 rounded-3xl shadow-lg">
               ✔️ Úklid společných prostor bytových domů
