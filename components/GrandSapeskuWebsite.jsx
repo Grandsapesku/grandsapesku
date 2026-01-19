@@ -2,6 +2,7 @@ import React from 'react';
 
 export default function GrandSapeskuWebsite() {
   return (
+   <>
     <h1>Profesionální mytí podzemních garáží v Praze</h1>
     <h2>Kompletní mytí a úklid podzemních garáží</h2>
 <p>
@@ -39,6 +40,7 @@ včetně lokalit Smíchov, Vinohrady, Karlín, Žižkov a okolí.
 Máte zájem o profesionální mytí podzemních garáží?
 Kontaktujte nás a připravíme nezávaznou nabídku.
 </p>
+     </>
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* HEADER */}
       <header className="bg-white shadow relative">
