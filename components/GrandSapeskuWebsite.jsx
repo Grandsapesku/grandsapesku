@@ -2,45 +2,31 @@ import React from 'react';
 
 export default function GrandSapeskuWebsite() {
   return (
-   <>
+  <div className="min-h-screen bg-gray-50 text-gray-900">
+
     <h1>Profesionální mytí podzemních garáží v Praze</h1>
-    <h2>Kompletní mytí a úklid podzemních garáží</h2>
-<p>
-Nabízíme profesionální mytí podzemních garáží v Praze a okolí.
-Specializujeme se na strojové čištění betonových povrchů,
-odstranění olejových skvrn, prachu a nečistot.
-</p>
 
-<h2>Co zahrnuje mytí podzemních garáží</h2>
-<ul>
-  <li>strojové mytí podlah a stěn</li>
-  <li>odstranění olejových a gumových stop</li>
-  <li>čištění parkovacích míst a ramp</li>
-  <li>úklid společných prostor</li>
-  <li>pravidelná údržba garáží</li>
-</ul>
+    <section>
+      <h2>Kompletní mytí a úklid podzemních garáží</h2>
 
-<h2>Proč si vybrat Grand Sapesku</h2>
-<ul>
-  <li>zkušenosti s velkými garážemi</li>
-  <li>profesionální technika</li>
-  <li>flexibilní termíny</li>
-  <li>férové ceny</li>
-  <li>působíme po celé Praze</li>
-</ul>
+      <p>
+        Nabízíme profesionální mytí podzemních garáží v Praze a okolí.
+        Specializujeme se na strojové čištění betonových povrchů.
+      </p>
 
-<h2>Mytí podzemních garáží v Praze a okolí</h2>
-<p>
-Poskytujeme mytí podzemních garáží v Praze 1–10,
-včetně lokalit Smíchov, Vinohrady, Karlín, Žižkov a okolí.
-</p>
+      <p>
+        Pokud hledáte spolehlivou firmu na úklid garáží v Praze, neváhejte
+        nás kontaktovat. Rádi připravíme cenovou nabídku na míru.
+      </p>
+    </section>
 
-<h2>Kontaktujte nás</h2>
-<p>
-Máte zájem o profesionální mytí podzemních garáží?
-Kontaktujte nás a připravíme nezávaznou nabídku.
-</p>
-     </>
+    <footer className="text-center text-sm text-gray-500 py-8">
+      © {new Date().getFullYear()} GrandSapesku s.r.o.
+    </footer>
+
+  </div>
+);
+     
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* HEADER */}
       <header className="bg-white shadow relative">
