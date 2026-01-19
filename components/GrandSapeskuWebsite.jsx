@@ -2,6 +2,43 @@ import React from 'react';
 
 export default function GrandSapeskuWebsite() {
   return (
+    <h1>Profesionální mytí podzemních garáží v Praze</h1>
+    <h2>Kompletní mytí a úklid podzemních garáží</h2>
+<p>
+Nabízíme profesionální mytí podzemních garáží v Praze a okolí.
+Specializujeme se na strojové čištění betonových povrchů,
+odstranění olejových skvrn, prachu a nečistot.
+</p>
+
+<h2>Co zahrnuje mytí podzemních garáží</h2>
+<ul>
+  <li>strojové mytí podlah a stěn</li>
+  <li>odstranění olejových a gumových stop</li>
+  <li>čištění parkovacích míst a ramp</li>
+  <li>úklid společných prostor</li>
+  <li>pravidelná údržba garáží</li>
+</ul>
+
+<h2>Proč si vybrat Grand Sapesku</h2>
+<ul>
+  <li>zkušenosti s velkými garážemi</li>
+  <li>profesionální technika</li>
+  <li>flexibilní termíny</li>
+  <li>férové ceny</li>
+  <li>působíme po celé Praze</li>
+</ul>
+
+<h2>Mytí podzemních garáží v Praze a okolí</h2>
+<p>
+Poskytujeme mytí podzemních garáží v Praze 1–10,
+včetně lokalit Smíchov, Vinohrady, Karlín, Žižkov a okolí.
+</p>
+
+<h2>Kontaktujte nás</h2>
+<p>
+Máte zájem o profesionální mytí podzemních garáží?
+Kontaktujte nás a připravíme nezávaznou nabídku.
+</p>
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* HEADER */}
       <header className="bg-white shadow relative">
