@@ -1,4 +1,5 @@
 import React from 'react';
+
 export default function GrandSapeskuWebsite() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
@@ -97,7 +98,7 @@ export default function GrandSapeskuWebsite() {
         </section>
 
         {/* SEO TEXT */}
-        <section className="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed">
+        {section className="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed"}
           <h2 className="text-2xl font-bold mb-4">
             Profesionální úklid garáží a společných prostor v Praze
           </h2>
