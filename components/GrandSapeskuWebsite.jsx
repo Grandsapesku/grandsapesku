@@ -1,28 +1,44 @@
 import React from 'react';
-
 export default function GrandSapeskuWebsite() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
 
-      <main>
+      {/* HEADER */}
+      <header className="bg-white shadow relative">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=1920&q=80"
+            alt="Moderní rezidenční komplex – bytové domy v Praze"
+            className="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div className="relative z-10 p-10 text-center">
+          <h1 className="text-4xl font-bold">
+            Profesionální úklid garáží v Praze
+          </h1>
+        </div>
+      </header>
 
-        <ol className="grid md:grid-cols-3 gap-6">
-          <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
-            1️⃣ Nezávazná prohlídka objektu
-          </li>
-          <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
-            2️⃣ Cenová nabídka na míru
-          </li>
-          <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
-            3️⃣ Profesionální úklid
-          </li>
-        </ol>
+      <main className="max-w-6xl mx-auto p-8 space-y-16">
 
-        {/* KONTAKT + FORMA */}
-        <section className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl mt-10">
-          <h2 className="text-3xl font-bold text-center">
-            Kontaktujte nás
-          </h2>
+        {/* STEPS */}
+        <section>
+          <ol className="grid md:grid-cols-3 gap-6">
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
+              1️⃣ Nezávazná prohlídka objektu
+            </li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
+              2️⃣ Cenová nabídka na míru
+            </li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
+              3️⃣ Profesionální úklid
+            </li>
+          </ol>
+        </section>
+
+        {/* CONTACT */}
+        <section className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl">
+          <h2 className="text-3xl font-bold text-center">Kontaktujte nás</h2>
 
           <form
             className="grid gap-4 max-w-xl mx-auto"
@@ -77,20 +93,14 @@ export default function GrandSapeskuWebsite() {
         </section>
 
         {/* SEO TEXT */}
-        <section className="max-w-4xl mx-auto px-6 text-gray-700 text-lg leading-relaxed mt-16">
+        <section className="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed">
           <h2 className="text-2xl font-bold mb-4">
             Profesionální úklid garáží a společných prostor v Praze
           </h2>
 
           <p className="mb-4">
             Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na
-            profesionální úklid podzemních garáží, bytových domů a společných
-            prostor v Praze a okolí.
-          </p>
-
-          <p className="mb-4">
-            Nabízíme strojové mytí garáží, odstranění olejových skvrn a pravidelný
-            úklid společných prostor.
+            profesionální úklid podzemních garáží a společných prostor v Praze.
           </p>
 
           <p>
@@ -101,7 +111,7 @@ export default function GrandSapeskuWebsite() {
 
       </main>
 
-      <footer className="text-center text-sm text-gray-500 py-8 mt-10">
+      <footer className="text-center text-sm text-gray-500 py-8">
         © {new Date().getFullYear()} GrandSapesku s.r.o.
       </footer>
 
