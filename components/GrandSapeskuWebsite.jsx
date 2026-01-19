@@ -98,7 +98,7 @@ export default function GrandSapeskuWebsite() {
         </section>
 
         {/* SEO TEXT */}
-        <section className="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed space-y-4">
+        <section className="max-w-4xl mx-auto px-6 text-gray-700 text-lg leading-relaxed space-y-4">
           <h2 className="text-2xl font-bold mb-4">
             Profesionální úklid garáží a společných prostor v Praze
           </h2>
