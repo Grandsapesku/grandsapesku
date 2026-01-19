@@ -122,8 +122,7 @@ export default function GrandSapeskuWebsite() {
             nás kontaktovat. Rádi připravíme cenovou nabídku na míru.
           </p>
         </section>
-
-      </main>
+    </main>
 
       {/* FOOTER */}
      <footer className="text-center text-sm text-gray-500 py-8">
