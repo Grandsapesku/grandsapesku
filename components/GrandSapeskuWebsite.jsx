@@ -12,6 +12,7 @@ export default function GrandSapeskuWebsite() {
             className="w-full h-full object-cover opacity-20"
           />
         </div>
+
         <div className="relative z-10 p-10 text-center">
           <h1 className="text-4xl font-bold">
             Profesionální úklid garáží v Praze
@@ -19,6 +20,7 @@ export default function GrandSapeskuWebsite() {
         </div>
       </header>
 
+      {/* MAIN */}
       <main className="max-w-6xl mx-auto p-8 space-y-16">
 
         {/* STEPS */}
@@ -36,9 +38,11 @@ export default function GrandSapeskuWebsite() {
           </ol>
         </section>
 
-        {/* CONTACT */}
+        {/* CONTACT + FORM */}
         <section className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl">
-          <h2 className="text-3xl font-bold text-center">Kontaktujte nás</h2>
+          <h2 className="text-3xl font-bold text-center">
+            Kontaktujte nás
+          </h2>
 
           <form
             className="grid gap-4 max-w-xl mx-auto"
@@ -47,7 +51,7 @@ export default function GrandSapeskuWebsite() {
           >
             <input
               type="text"
-              name="name"
+              name="fullname"
               placeholder="Jméno / Příjmení"
               className="border rounded-xl p-4"
               required
@@ -100,25 +104,33 @@ export default function GrandSapeskuWebsite() {
 
           <p className="mb-4">
             Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na
-            profesionální úklid podzemních garáží a společných prostor v Praze.
+            profesionální úklid podzemních garáží, bytových domů a společných
+            prostor v Praze a okolí. Spolupracujeme se SVJ, správci nemovitostí a
+            developerskými projekty.
+          </p>
+
+          <p className="mb-4">
+            Nabízíme strojové mytí garáží, odstranění olejových skvrn, pravidelný
+            úklid chodeb, schodišť, výtahů a vstupních prostor. Jsme plátci DPH,
+            máme pojištění odpovědnosti a pracujeme na základě smlouvy.
           </p>
 
           <p>
             Pokud hledáte spolehlivou firmu na úklid garáží v Praze, neváhejte
-            nás kontaktovat.
+            nás kontaktovat. Rádi připravíme cenovou nabídku na míru.
           </p>
         </section>
 
       </main>
 
-      <footer className="text-center text-sm text-gray-500 py-8">
+      {/* FOOTER */}
+     <footer className="text-center text-sm text-gray-500 py-8">
         © {new Date().getFullYear()} GrandSapesku s.r.o.
       </footer>
 
     </div>
   );
 }
-     
       {/* HEADER */}
       <header className="bg-white shadow relative">
         <div className="absolute inset-0">
