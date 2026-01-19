@@ -2,30 +2,114 @@ import React from 'react';
 
 export default function GrandSapeskuWebsite() {
   return (
-  <div className="min-h-screen bg-gray-50 text-gray-900">
+  export default function GrandSapeskuWebsite() {
+  return (
+    <div className="min-h-screen bg-gray-50 text-gray-900">
 
-    <h1>Profesionální mytí podzemních garáží v Praze</h1>
+      <main>
 
-    <section>
-      <h2>Kompletní mytí a úklid podzemních garáží</h2>
+        <ol className="grid md:grid-cols-3 gap-6">
+          <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
+            1️⃣ Nezávazná prohlídka objektu
+          </li>
+          <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
+            2️⃣ Cenová nabídka na míru
+          </li>
+          <li className="bg-white p-8 rounded-3xl shadow-lg text-center">
+            3️⃣ Profesionální úklid
+          </li>
+        </ol>
 
-      <p>
-        Nabízíme profesionální mytí podzemních garáží v Praze a okolí.
-        Specializujeme se na strojové čištění betonových povrchů.
-      </p>
+        {/* KONTAKT + FORMA */}
+        <section className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl mt-10">
+          <h2 className="text-3xl font-bold text-center">
+            Kontaktujte nás
+          </h2>
 
-      <p>
-        Pokud hledáte spolehlivou firmu na úklid garáží v Praze, neváhejte
-        nás kontaktovat. Rádi připravíme cenovou nabídku na míru.
-      </p>
-    </section>
+          <form
+            className="grid gap-4 max-w-xl mx-auto"
+            action="https://formspree.io/f/mykkkewv"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Jméno / Příjmení"
+              className="border rounded-xl p-4"
+              required
+            />
 
-    <footer className="text-center text-sm text-gray-500 py-8">
-      © {new Date().getFullYear()} GrandSapesku s.r.o.
-    </footer>
+            <input
+              type="text"
+              name="address"
+              placeholder="Adresa"
+              className="border rounded-xl p-4"
+              required
+            />
 
-  </div>
-);
+            <input
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              className="border rounded-xl p-4"
+              required
+            />
+
+            <textarea
+              name="message"
+              placeholder="Zpráva"
+              className="border rounded-xl p-4 min-h-[140px]"
+              required
+            />
+
+            <button
+              type="submit"
+              className="bg-red-600 hover:bg-red-700 transition text-white px-8 py-4 rounded-3xl w-fit mx-auto text-lg font-semibold"
+            >
+              Odeslat poptávku
+            </button>
+          </form>
+
+          <div className="text-center text-gray-700 mt-6 text-lg">
+            <p>📍 Praha</p>
+            <p>📞 777 911 611</p>
+            <p>✉️ grandsapesku@seznam.cz</p>
+            <p>🏢 GrandSapesku s.r.o.</p>
+          </div>
+        </section>
+
+        {/* SEO TEXT */}
+        <section className="max-w-4xl mx-auto px-6 text-gray-700 text-lg leading-relaxed mt-16">
+          <h2 className="text-2xl font-bold mb-4">
+            Profesionální úklid garáží a společných prostor v Praze
+          </h2>
+
+          <p className="mb-4">
+            Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na
+            profesionální úklid podzemních garáží, bytových domů a společných
+            prostor v Praze a okolí.
+          </p>
+
+          <p className="mb-4">
+            Nabízíme strojové mytí garáží, odstranění olejových skvrn a pravidelný
+            úklid společných prostor.
+          </p>
+
+          <p>
+            Pokud hledáte spolehlivou firmu na úklid garáží v Praze, neváhejte
+            nás kontaktovat.
+          </p>
+        </section>
+
+      </main>
+
+      <footer className="text-center text-sm text-gray-500 py-8 mt-10">
+        © {new Date().getFullYear()} GrandSapesku s.r.o.
+      </footer>
+
+    </div>
+  );
+}
      
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* HEADER */}
