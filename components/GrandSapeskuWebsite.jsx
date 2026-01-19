@@ -8,7 +8,7 @@ export default function GrandSapeskuWebsite() {
       <header className="bg-white shadow relative">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=1920&q=80"
+            src="https://images.unsplash.com/…80"
             alt="Moderní rezidenční komplex – bytové domy v Praze"
             className="w-full h-full object-cover opacity-20"
           />
@@ -47,7 +47,7 @@ export default function GrandSapeskuWebsite() {
 
           <form
             className="grid gap-4 max-w-xl mx-auto"
-            action="https://formspree.io/f/mykkkewv"
+            action="https://formspree.io/…wv"
             method="POST"
           >
             <input
@@ -98,20 +98,19 @@ export default function GrandSapeskuWebsite() {
         </section>
 
         {/* SEO TEXT */}
-        <section className="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed">
+        <section className="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed space-y-4">
           <h2 className="text-2xl font-bold mb-4">
             Profesionální úklid garáží a společných prostor v Praze
           </h2>
-          </section>
 
-          <p className="mb-4">
+          <p>
             Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na
             profesionální úklid podzemních garáží, bytových domů a společných
             prostor v Praze a okolí. Spolupracujeme se SVJ, správci nemovitostí a
             developerskými projekty.
           </p>
 
-          <p className="mb-4">
+          <p>
             Nabízíme strojové mytí garáží, odstranění olejových skvrn, pravidelný
             úklid chodeb, schodišť, výtahů a vstupních prostor. Jsme plátci DPH,
             máme pojištění odpovědnosti a pracujeme na základě smlouvy.
@@ -123,9 +122,10 @@ export default function GrandSapeskuWebsite() {
           </p>
         </section>
 
-      {/* FOOTER */}
       </main>
-     <footer className="text-center text-sm text-gray-500 py-8">
+
+      {/* FOOTER */}
+      <footer className="text-center text-sm text-gray-500 py-8">
         © {new Date().getFullYear()} GrandSapesku s.r.o.
       </footer>
 
