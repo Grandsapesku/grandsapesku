@@ -109,7 +109,6 @@ export default function GrandSapeskuWebsite() {
   );
 }
      
-    <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* HEADER */}
       <header className="bg-white shadow relative">
         <div className="absolute inset-0">
