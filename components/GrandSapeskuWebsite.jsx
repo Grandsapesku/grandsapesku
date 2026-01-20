@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 export default function GrandSapeskuWebsite() {
   const [openIndex, setOpenIndex] = useState(null);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const faqItems = [
     {
@@ -35,8 +36,53 @@ export default function GrandSapeskuWebsite() {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
+      {/* NAV MENU */}
+      <nav className="sticky top-0 bg-white shadow z-50">
+        <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+          <div className="text-2xl font-bold text-red-600 cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+            GrandSapesku
+          </div>
+
+          <div className="hidden md:flex gap-6 font-semibold text-gray-700">
+            <button onClick={() => scrollToSection("sluzby")}>Naše služby</button>
+            <button onClick={() => scrollToSection("proc")}>Proč spolupracovat</button>
+            <button onClick={() => scrollToSection("jak")}>Jak spolupráce probíhá</button>
+            <button onClick={() => scrollToSection("faq")}>FAQ</button>
+            <button onClick={() => scrollToSection("kontakt")}>Kontaktujte nás</button>
+            <button onClick={() => scrollToSection("specialni")}>Speciální podmínky</button>
+            <button onClick={() => scrollToSection("cenik")}>Orientační ceník</button>
+          </div>
+
+          {/* MOBILE MENU BUTTON */}
+          <div className="md:hidden">
+            <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-700 text-2xl">
+              ☰
+            </button>
+          </div>
+        </div>
+
+        {/* MOBILE MENU */}
+        {menuOpen && (
+          <div className="md:hidden bg-white border-t border-gray-200 px-6 py-4 flex flex-col gap-3 font-semibold text-gray-700">
+            <button onClick={() => scrollToSection("sluzby")}>Naše služby</button>
+            <button onClick={() => scrollToSection("proc")}>Proč spolupracovat</button>
+            <button onClick={() => scrollToSection("jak")}>Jak spolupráce probíhá</button>
+            <button onClick={() => scrollToSection("faq")}>FAQ</button>
+            <button onClick={() => scrollToSection("kontakt")}>Kontaktujte nás</button>
+            <button onClick={() => scrollToSection("specialni")}>Speciální podmínky</button>
+            <button onClick={() => scrollToSection("cenik")}>Orientační ceník</button>
+          </div>
+        )}
+      </nav>
+
       {/* HEADER */}
       <header className="bg-white shadow relative">
         <div className="absolute inset-0">
@@ -75,10 +121,10 @@ export default function GrandSapeskuWebsite() {
         </div>
       </header>
 
-      {/* MAIN */}
+      {/* MAIN CONTENT */}
       <main className="max-w-6xl mx-auto px-6 py-20 grid gap-20">
         {/* SLUŽBY */}
-        <section className="grid gap-6">
+        <section id="sluzby" className="grid gap-6">
           <h2 className="text-3xl font-bold text-center">Naše služby</h2>
           <ul className="grid md:grid-cols-2 gap-6">
             <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Úklid podzemních garáží</li>
@@ -87,8 +133,9 @@ export default function GrandSapeskuWebsite() {
             <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Strojové mytí podlah</li>
           </ul>
         </section>
+
         {/* PROC SPOLUPRACOVAT */}
-        <section className="grid gap-6">
+        <section id="proc" className="grid gap-6">
           <h2 className="text-3xl font-bold text-center">Proč spolupracovat s námi</h2>
           <ul className="grid md:grid-cols-4 gap-6">
             <li className="bg-white p-6 rounded-3xl shadow-lg text-center">✔️ Plátce DPH</li>
@@ -99,7 +146,7 @@ export default function GrandSapeskuWebsite() {
         </section>
 
         {/* JAK SPOLUPRACE PROBIHA */}
-        <section className="grid gap-6">
+        <section id="jak" className="grid gap-6">
           <h2 className="text-3xl font-bold text-center">Jak spolupráce probíhá</h2>
           <ol className="grid md:grid-cols-3 gap-6">
             <li className="bg-white p-8 rounded-3xl shadow-lg text-center">1️⃣ Nezávazná prohlídka objektu</li>
@@ -108,8 +155,8 @@ export default function GrandSapeskuWebsite() {
           </ol>
         </section>
 
-        {/* FAQ АКОРДЕОН */}
-        <section className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg">
+        {/* FAQ */}
+        <section id="faq" className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg">
           <h2 className="text-2xl font-bold text-center mb-6">Často kladené otázky (FAQ)</h2>
           <div className="space-y-4">
             {faqItems.map((item, index) => (
@@ -131,10 +178,9 @@ export default function GrandSapeskuWebsite() {
           </div>
         </section>
 
-        {/* KONTAKT + FORMA */}
+        {/* Kontakt */}
         <section id="kontakt" className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl">
           <h2 className="text-3xl font-bold text-center">Kontaktujte nás</h2>
-
           <form className="grid gap-4 max-w-xl mx-auto" action="https://formspree.io/f/mykkkewv" method="POST">
             <input type="text" name="name" placeholder="Jméno / Přijmeni" className="border rounded-xl p-4" required />
             <input type="text" name="address" placeholder="Adresa" className="border rounded-xl p-4" required />
@@ -153,21 +199,18 @@ export default function GrandSapeskuWebsite() {
           </div>
         </section>
 
-        {/* SEKCE PRO NEPLÁTCE DPH + VÝHODY STROJOVÉHO MYTÍ */}
-        <section className="max-w-4xl mx-auto px-6 py-12 text-gray-700 text-lg leading-relaxed space-y-6 bg-gray-50 rounded-3xl shadow-lg">
+        {/* Speciální podmínky + strojové mytí */}
+        <section id="specialni" className="max-w-4xl mx-auto px-6 py-12 text-gray-700 text-lg leading-relaxed space-y-6 bg-gray-50 rounded-3xl shadow-lg">
           <h2 className="text-2xl font-bold mb-4 text-center">Speciální podmínky pro neplátce DPH</h2>
-
           <p>
-            I pokud nejste plátcem DPH, rádi Vám nabídneme profesionální úklid garáží a společných prostor
-            za <strong>speciálních podmínek</strong>. Přizpůsobíme cenovou nabídku Vašim potřebám, abyste
-            získali stejnou kvalitu úklidu, aniž byste museli řešit DPH.
+            I pokud nejste plátcem DPH, nabízíme profesionální úklid garáží a společných prostor
+            za <strong>speciálních podmínek</strong>. Přizpůsobíme cenovou nabídku Vašim potřebám.
           </p>
           <h3 className="text-xl font-semibold mt-6">Proč je strojové mytí garáží a podlah důležité</h3>
           <p>
             Podzemní garáže a parkovací plochy se rychle znečišťují – olejové skvrny, prach, písek a další nečistoty
             mohou poškodit povrch podlah a způsobit nepříjemné zápachy. Naše profesionální strojové mytí:
           </p>
-
           <ul className="list-disc list-inside space-y-2">
             <li>Odstraňuje olejové a tukové skvrny efektivně a bezpečně</li>
             <li>Zachovává a prodlužuje životnost betonových a dlažebních povrchů</li>
@@ -176,73 +219,41 @@ export default function GrandSapeskuWebsite() {
             <li>Strojové mytí podlah je rychlejší, efektivnější a šetrnější než ruční čištění</li>
             <li>Optimalizuje údržbu garáží a snižuje dlouhodobé náklady na opravy a úklid</li>
           </ul>
-
-          <p>
-            Díky našim zkušenostem, moderním strojům a profesionálnímu přístupu garantujeme rychlý a spolehlivý úklid,
-            který šetří Váš čas, chrání podlahy a zajišťuje dlouhodobou čistotu a bezpečnost Vaší nemovitosti.
-          </p>
         </section>
 
         {/* SEO TEXT */}
         <section className="max-w-4xl mx-auto px-6 text-gray-700 text-lg leading-relaxed">
-          <h2 className="text-2xl font-bold mb-4">
-            Profesionální úklid garáží a společných prostor v Praze
-          </h2>
-
-          <p className="mb-4">
-            Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na
-            profesionální úklid podzemních garáží, bytových domů a společných
-            prostor v Praze a okolí. Spolupracujeme se SVJ, správci nemovitostí a
-            developerskými projekty.
-          </p>
-
-          <p className="mb-4">
-            Nabízíme strojové mytí garáží, odstranění olejových skvrn, pravidelný
-            úklid chodeb, schodišť, výtahů a vstupních prostor. Jsme plátci DPH,
-            máme pojištění odpovědnosti a pracujeme na základě smlouvy.
-          </p>
-
-          <p>
-            Pokud hledáte spolehlivou firmu na úklid garáží v Praze, neváhejte
-            nás kontaktovat. Rádi připravíme cenovou nabídku na míru.
-          </p>
+          <h2 className="text-2xl font-bold mb-4">Profes</h2>
+          <p className="mb-4">Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na profesionální úklid...</p>
         </section>
 
-        {/* ORIENTAČNÍ CENÍK */}
-        <section className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg space-y-6">
+        {/* Orientační ceník */}
+        <section id="cenik" className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg space-y-6">
           <h2 className="text-2xl font-bold text-center mb-6">Orientační ceník našich služeb</h2>
-
           <ul className="grid md:grid-cols-2 gap-6 text-gray-700 text-lg">
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Úklid podzemních garáží</h3>
               <p>od <strong>90 Kč / m²</strong></p>
-              <p className="text-sm text-gray-500">Profesionální mechanické mytí a úklid ploch</p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Úklid společných prostor bytových domů</h3>
               <p>od <strong>80 Kč / m²</strong></p>
-              <p className="text-sm text-gray-500">Chodby, vstupy a společné prostory</p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Úklid chodeb a schodišť</h3>
               <p>od <strong>60 Kč / m²</strong></p>
-              <p className="text-sm text-gray-500">Efektivní úklid s použitím moderních technologií</p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Strojové mytí podlah</h3>
               <p>od <strong>100 Kč / m²</strong></p>
-              <p className="text-sm text-gray-500">Hloubkové strojové čištění pro dlouhodobou životnost</p>
             </li>
           </ul>
-
           <p className="text-center text-gray-600 mt-4">
             Ceny jsou orientační a mohou se lišit podle rozsahu práce, typu povrchu a úrovně znečištění.
-            Přesná cena bude stanovena po bezplatné prohlídce objektu nebo na základě Vaší poptávky.
           </p>
         </section>
       </main>
 
-      {/* FOOTER */}
       <footer className="text-center text-sm text-gray-500 py-8">
         © {new Date().getFullYear()} GrandSapesku s.r.o.
       </footer>
