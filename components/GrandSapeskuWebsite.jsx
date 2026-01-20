@@ -1,4 +1,4 @@
-"use client"; // Для використання useRef, форм та інших клієнтських можливостей
+"use client"; // Для клієнтських можливостей
 import React from 'react';
 
 export default function GrandSapeskuWebsite() {
@@ -78,7 +78,7 @@ export default function GrandSapeskuWebsite() {
             Ceny jsou orientační a mohou se lišit podle rozsahu práce, typu povrchu a úrovně znečištění.
             Přesná cena bude stanovena po bezplatné prohlídce objektu nebo na základě Vaší poptávky.
           </p>
-        </section>
+          </section>
 
         {/* PROC SPOLUPRACOVAT */}
         <section className="grid gap-6">
@@ -99,6 +99,58 @@ export default function GrandSapeskuWebsite() {
             <li className="bg-white p-8 rounded-3xl shadow-lg text-center">2️⃣ Cenová nabídka na míru</li>
             <li className="bg-white p-8 rounded-3xl shadow-lg text-center">3️⃣ Profesionální úklid</li>
           </ol>
+        </section>
+
+        {/* FAQ SEKCE - Після Jak spolupráce probíhá */}
+        <section className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg space-y-8">
+          <h2 className="text-2xl font-bold text-center mb-6">Často kladené otázky (FAQ)</h2>
+
+          <div className="space-y-4">
+            <div>
+              <h3 className="font-semibold text-lg">1️⃣ Jak často je potřeba strojové mytí garáží?</h3>
+              <p className="text-gray-700 mt-1">
+                Doporučujeme pravidelné mytí 1–2× ročně, v závislosti na zatížení garáže a množství nečistot. 
+                Pravidelná údržba prodlužuje životnost podlah a udržuje čistotu a bezpečnost.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-lg">2️⃣ Spolupracujete i s neplátci DPH?</h3>
+              <p className="text-gray-700 mt-1">
+                Ano, nabízíme speciální podmínky pro neplátce DPH. Přizpůsobíme cenovou nabídku vašim potřebám, 
+                abyste získali stejnou kvalitu úklidu.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-lg">3️⃣ Jak dlouho trvá úklid garáže?</h3>
+              <p className="text-gray-700 mt-1">
+                Doba úklidu závisí na velikosti garáže a rozsahu práce. Na místě provedeme nezávaznou prohlídku 
+                a připravíme přesný časový plán.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-lg">4️⃣ Používáte ekologické a bezpečné čisticí prostředky?</h3>
+              <p className="text-gray-700 mt-1">
+                Ano, používáme moderní stroje a ekologické čisticí prostředky, které jsou šetrné k podlaze i životnímu prostředí.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-lg">5️⃣ Nabízíte úklid pro SVJ a developerské projekty?</h3>
+              <p className="text-gray-700 mt-1">
+                Ano, spolupracujeme se SVJ, správci nemovitostí i developerskými projekty a přizpůsobujeme služby konkrétním požadavkům.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-lg">6️⃣ Jak si objednat úklid?</h3>
+              <p className="text-gray-700 mt-1">
+                Stačí vyplnit náš kontaktní formulář, zavolat nebo napsat e-mail a my připravíme cenovou nabídku na míru.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* KONTAKT + FORMA */}
