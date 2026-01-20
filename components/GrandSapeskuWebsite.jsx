@@ -32,6 +32,33 @@ export default function GrandSapeskuWebsite() {
           </ol>
         </section>
 
+        {/* SECTION 3 — Kontakt + formulář */}
+        <section className="bg-white rounded-3xl shadow p-8">
+          <h2 className="text-2xl font-bold text-center mb-4">Kontaktujte nás</h2>
+          <form className="grid gap-4 max-w-xl mx-auto">
+            <input
+              type="text"
+              placeholder="Jméno / Příjmení"
+              className="border rounded-xl p-4"
+            />
+            <input
+              type="email"
+              placeholder="E-mail"
+              className="border rounded-xl p-4"
+            />
+            <textarea
+              placeholder="Zpráva"
+              className="border rounded-xl p-4 min-h-[140px]"
+            />
+            <button
+              type="submit"
+              className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-3xl w-fit mx-auto text-lg font-semibold"
+            >
+              Odeslat
+            </button>
+          </form>
+        </section>
+
       </main>
 
     </div>
