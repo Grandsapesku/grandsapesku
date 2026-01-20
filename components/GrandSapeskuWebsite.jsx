@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 export default function GrandSapeskuWebsite() {
+  const contactRef = useRef(null);
+
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
 
@@ -8,15 +14,15 @@ export default function GrandSapeskuWebsite() {
       <header className="bg-white shadow relative">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=1920&q=80"
+            src="https://images.unsplash.com/…80"
             alt="Moderní rezidenční komplex – bytové domy v Praze"
             className="absolute inset-0 w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-6 py-24 flex flex-col gap-4">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+        <div className="relative max-w-6xl mx-auto px-6 py-24 flex flex-col gap-4 text-center">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight bg-clip-text text-transparent bg-gradient-to-r from-red-400 via-pink-500 to-purple-500 animate-gradient-x">
             Profesionální úklid garáží a společných prostory<br />Praha a okolí
           </h1>
           <p className="text-xl text-gray-200">GrandSapesku S.R.O.</p>
@@ -24,16 +30,24 @@ export default function GrandSapeskuWebsite() {
           <p className="text-xl text-gray-200">DIČ: CZ17957486</p>
           <p className="text-xl text-gray-200">Adresa sídla: Za hrázi d. ev. 467, 155 31, Praha 5 - Lipence</p>
 
-          <a
-            href="tel:777911611"
-            className="mt-6 inline-flex w-fit bg-red-600 hover:bg-red-700 transition text-white px-10 py-4 rounded-full text-xl font-semibold"
-          >
-            Zavolat 777 911 611
-          </a>
+          <div className="mt-6 flex justify-center gap-4 flex-wrap">
+            <a
+              href="tel:777911611"
+              className="inline-flex bg-red-600 hover:bg-red-700 transition text-white px-10 py-4 rounded-full text-xl font-semibold"
+            >
+              Zavolat 777 911 611
+            </a>
+            <button
+              onClick={scrollToContact}
+              className="inline-flex bg-white hover:bg-gray-100 transition text-red-600 px-8 py-4 rounded-full text-xl font-semibold"
+            >
+              Kontaktujte nás
+            </button>
+          </div>
         </div>
       </header>
 
-      {/* SLUŽBY */}
+      {/* MAIN */}
       <main className="max-w-6xl mx-auto px-6 py-20 grid gap-20">
 
         {/* Naše služby */}
@@ -69,12 +83,15 @@ export default function GrandSapeskuWebsite() {
         </section>
 
         {/* Kontakt + formulář */}
-        <section className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl">
+        <section
+          ref={contactRef}
+          className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl"
+        >
           <h2 className="text-3xl font-bold text-center">Kontaktujte nás</h2>
 
           <form
             className="grid gap-4 max-w-xl mx-auto"
-            action="https://formspree.io/f/mykkkewv"
+            action="https://formspree.io/…wv"
             method="POST"
           >
             <input
@@ -148,6 +165,19 @@ export default function GrandSapeskuWebsite() {
       <footer className="text-center text-sm text-gray-500 py-8">
         © {new Date().getFullYear()} GrandSapesku s.r.o.
       </footer>
+
+      {/* Tailwind gradient animation */}
+      <style jsx>{`
+        .animate-gradient-x {
+          background-size: 200% 200%;
+          animation: gradient-x 5s ease infinite;
+        }
+        @keyframes gradient-x {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
 
     </div>
   );
