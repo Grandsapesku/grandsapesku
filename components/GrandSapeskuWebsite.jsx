@@ -83,6 +83,11 @@ export default function GrandSapeskuWebsite() {
 
       </main>
 
+      {/* FOOTER */}
+      <footer className="text-center text-sm text-gray-500 py-8">
+        © {new Date().getFullYear()} GrandSapesku s.r.o.
+      </footer>
+
     </div>
   );
 }
