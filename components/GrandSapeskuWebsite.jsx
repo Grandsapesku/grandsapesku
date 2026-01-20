@@ -1,3 +1,5 @@
+"use client"; // 🔥 Обов'язково для клієнтського компонента
+
 import React, { useRef } from 'react';
 
 export default function GrandSapeskuWebsite() {
@@ -14,7 +16,7 @@ export default function GrandSapeskuWebsite() {
       <header className="bg-white shadow relative">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/…80"
+            src="https://images.unsplash.com/photo-1527030280862-64139fba04ca?auto=format&fit=crop&w=1920&q=80"
             alt="Moderní rezidenční komplex – bytové domy v Praze"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -79,7 +81,7 @@ export default function GrandSapeskuWebsite() {
             <li className="bg-white p-8 rounded-3xl shadow-lg text-center">1️⃣ Nezávazná prohlídka objektu</li>
             <li className="bg-white p-8 rounded-3xl shadow-lg text-center">2️⃣ Cenová nabídka na míru</li>
             <li className="bg-white p-8 rounded-3xl shadow-lg text-center">3️⃣ Profesionální úklid</li>
-          </ol>
+            </ol>
         </section>
 
         {/* Kontakt + formulář */}
@@ -91,7 +93,7 @@ export default function GrandSapeskuWebsite() {
 
           <form
             className="grid gap-4 max-w-xl mx-auto"
-            action="https://formspree.io/…wv"
+            action="https://formspree.io/f/mykkkewv"
             method="POST"
           >
             <input
