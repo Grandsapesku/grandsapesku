@@ -1,10 +1,42 @@
-"use client"; // Для клієнтських можливостей
-import React from 'react';
+"use client";
+import React, { useState } from "react";
 
 export default function GrandSapeskuWebsite() {
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const faqItems = [
+    {
+      question: "1️⃣ Jak často je potřeba strojové mytí garáží?",
+      answer: "Doporučujeme pravidelné mytí 1–2× ročně, v závislosti na zatížení garáže a množství nečistot. Pravidelná údržba prodlužuje životnost podlah a udržuje čistotu a bezpečnost."
+    },
+    {
+      question: "2️⃣ Spolupracujete i s neplátci DPH?",
+      answer: "Ano, nabízíme speciální podmínky pro neplátce DPH. Přizpůsobíme cenovou nabídku vašim potřebám, abyste získali stejnou kvalitu úklidu."
+    },
+    {
+      question: "3️⃣ Jak dlouho trvá úklid garáže?",
+      answer: "Doba úklidu závisí na velikosti garáže a rozsahu práce. Na místě provedeme nezávaznou prohlídku a připravíme přesný časový plán."
+    },
+    {
+      question: "4️⃣ Používáte ekologické a bezpečné čisticí prostředky?",
+      answer: "Ano, používáme moderní stroje a ekologické čisticí prostředky, které jsou šetrné k podlaze i životnímu prostředí."
+    },
+    {
+      question: "5️⃣ Nabízíte úklid pro SVJ a developerské projekty?",
+      answer: "Ano, spolupracujeme se SVJ, správci nemovitostí i developerskými projekty a přizpůsobujeme služby konkrétním požadavkům."
+    },
+    {
+      question: "6️⃣ Jak si objednat úklid?",
+      answer: "Stačí vyplnit náš kontaktní formulář, zavolat nebo napsat e-mail a my připravíme cenovou nabídku na míru."
+    },
+  ];
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
-
       {/* HEADER */}
       <header className="bg-white shadow relative">
         <div className="absolute inset-0">
@@ -25,18 +57,27 @@ export default function GrandSapeskuWebsite() {
           <p className="text-xl text-gray-200">DIČ: CZ17957486</p>
           <p className="text-xl text-gray-200">Adresa sídla: Za hrázi d. ev. 467, 155 31, Praha 5 - Lipence</p>
 
-          <a
-            href="tel:777911611"
-            className="mt-6 inline-flex w-fit bg-red-600 hover:bg-red-700 transition text-white px-10 py-4 rounded-full text-xl font-semibold"
-          >
-            Zavolat 777 911 611
-          </a>
+          <div className="mt-6 flex flex-wrap gap-4">
+            <a
+              href="tel:777911611"
+              className="inline-flex w-fit bg-red-600 hover:bg-red-700 transition text-white px-10 py-4 rounded-full text-xl font-semibold"
+            >
+              Zavolat 777 911 611
+            </a>
+
+            <a
+              href="#kontakt"
+              className="inline-flex w-fit bg-white hover:bg-gray-100 transition text-red-600 px-10 py-4 rounded-full text-xl font-semibold border-2 border-red-600"
+            >
+              Kontaktujte nás
+            </a>
+          </div>
         </div>
       </header>
 
-      {/* SLUŽBY */}
+      {/* MAIN */}
       <main className="max-w-6xl mx-auto px-6 py-20 grid gap-20">
-
+        {/* SLUŽBY */}
         <section className="grid gap-6">
           <h2 className="text-3xl font-bold text-center">Naše služby</h2>
           <ul className="grid md:grid-cols-2 gap-6">
@@ -46,40 +87,6 @@ export default function GrandSapeskuWebsite() {
             <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Strojové mytí podlah</li>
           </ul>
         </section>
-
-        {/* ORIENTAČNÍ CENY */}
-        <section className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg space-y-6">
-          <h2 className="text-2xl font-bold text-center mb-6">Orientační ceník našich služeb</h2>
-
-          <ul className="grid md:grid-cols-2 gap-6 text-gray-700 text-lg">
-            <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Úklid podzemních garáží</h3>
-              <p>od <strong>90 Kč / m²</strong></p>
-              <p className="text-sm text-gray-500">Profesionální mechanické mytí a úklid ploch</p>
-            </li>
-            <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Úklid společných prostor bytových domů</h3>
-              <p>od <strong>80 Kč / m²</strong></p>
-              <p className="text-sm text-gray-500">Chodby, vstupy a společné prostory</p>
-            </li>
-            <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Úklid chodeb a schodišť</h3>
-              <p>od <strong>60 Kč / m²</strong></p>
-              <p className="text-sm text-gray-500">Efektivní úklid s použitím moderních technologií</p>
-            </li>
-            <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Strojové mytí podlah</h3>
-              <p>od <strong>100 Kč / m²</strong></p>
-              <p className="text-sm text-gray-500">Hloubkové strojové čištění pro dlouhodobou životnost</p>
-            </li>
-          </ul>
-
-          <p className="text-center text-gray-600 mt-4">
-            Ceny jsou orientační a mohou se lišit podle rozsahu práce, typu povrchu a úrovně znečištění.
-            Přesná cena bude stanovena po bezplatné prohlídce objektu nebo na základě Vaší poptávky.
-          </p>
-          </section>
-
         {/* PROC SPOLUPRACOVAT */}
         <section className="grid gap-6">
           <h2 className="text-3xl font-bold text-center">Proč spolupracovat s námi</h2>
@@ -101,60 +108,31 @@ export default function GrandSapeskuWebsite() {
           </ol>
         </section>
 
-        {/* FAQ SEKCE - Після Jak spolupráce probíhá */}
-        <section className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg space-y-8">
+        {/* FAQ АКОРДЕОН */}
+        <section className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg">
           <h2 className="text-2xl font-bold text-center mb-6">Často kladené otázky (FAQ)</h2>
-
           <div className="space-y-4">
-            <div>
-              <h3 className="font-semibold text-lg">1️⃣ Jak často je potřeba strojové mytí garáží?</h3>
-              <p className="text-gray-700 mt-1">
-                Doporučujeme pravidelné mytí 1–2× ročně, v závislosti na zatížení garáže a množství nečistot. 
-                Pravidelná údržba prodlužuje životnost podlah a udržuje čistotu a bezpečnost.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-lg">2️⃣ Spolupracujete i s neplátci DPH?</h3>
-              <p className="text-gray-700 mt-1">
-                Ano, nabízíme speciální podmínky pro neplátce DPH. Přizpůsobíme cenovou nabídku vašim potřebám, 
-                abyste získali stejnou kvalitu úklidu.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-lg">3️⃣ Jak dlouho trvá úklid garáže?</h3>
-              <p className="text-gray-700 mt-1">
-                Doba úklidu závisí na velikosti garáže a rozsahu práce. Na místě provedeme nezávaznou prohlídku 
-                a připravíme přesný časový plán.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-lg">4️⃣ Používáte ekologické a bezpečné čisticí prostředky?</h3>
-              <p className="text-gray-700 mt-1">
-                Ano, používáme moderní stroje a ekologické čisticí prostředky, které jsou šetrné k podlaze i životnímu prostředí.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-lg">5️⃣ Nabízíte úklid pro SVJ a developerské projekty?</h3>
-              <p className="text-gray-700 mt-1">
-                Ano, spolupracujeme se SVJ, správci nemovitostí i developerskými projekty a přizpůsobujeme služby konkrétním požadavkům.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-semibold text-lg">6️⃣ Jak si objednat úklid?</h3>
-              <p className="text-gray-700 mt-1">
-                Stačí vyplnit náš kontaktní formulář, zavolat nebo napsat e-mail a my připravíme cenovou nabídku na míru.
-              </p>
-            </div>
+            {faqItems.map((item, index) => (
+              <div key={index} className="border rounded-lg">
+                <button
+                  className="w-full flex justify-between items-center px-4 py-3 font-semibold text-left"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  {item.question}
+                  <span>{openIndex === index ? "−" : "+"}</span>
+                </button>
+                {openIndex === index && (
+                  <div className="px-4 py-3 text-gray-700 border-t bg-gray-50">
+                    {item.answer}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </section>
 
         {/* KONTAKT + FORMA */}
-        <section className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl">
+        <section id="kontakt" className="grid gap-6 bg-white p-10 rounded-3xl shadow-xl">
           <h2 className="text-3xl font-bold text-center">Kontaktujte nás</h2>
 
           <form className="grid gap-4 max-w-xl mx-auto" action="https://formspree.io/f/mykkkewv" method="POST">
@@ -184,7 +162,6 @@ export default function GrandSapeskuWebsite() {
             za <strong>speciálních podmínek</strong>. Přizpůsobíme cenovou nabídku Vašim potřebám, abyste
             získali stejnou kvalitu úklidu, aniž byste museli řešit DPH.
           </p>
-
           <h3 className="text-xl font-semibold mt-6">Proč je strojové mytí garáží a podlah důležité</h3>
           <p>
             Podzemní garáže a parkovací plochy se rychle znečišťují – olejové skvrny, prach, písek a další nečistoty
@@ -231,6 +208,38 @@ export default function GrandSapeskuWebsite() {
           </p>
         </section>
 
+        {/* ORIENTAČNÍ CENÍK */}
+        <section className="max-w-4xl mx-auto px-6 py-12 bg-gray-50 rounded-3xl shadow-lg space-y-6">
+          <h2 className="text-2xl font-bold text-center mb-6">Orientační ceník našich služeb</h2>
+
+          <ul className="grid md:grid-cols-2 gap-6 text-gray-700 text-lg">
+            <li className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="font-semibold mb-2">Úklid podzemních garáží</h3>
+              <p>od <strong>90 Kč / m²</strong></p>
+              <p className="text-sm text-gray-500">Profesionální mechanické mytí a úklid ploch</p>
+            </li>
+            <li className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="font-semibold mb-2">Úklid společných prostor bytových domů</h3>
+              <p>od <strong>80 Kč / m²</strong></p>
+              <p className="text-sm text-gray-500">Chodby, vstupy a společné prostory</p>
+            </li>
+            <li className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="font-semibold mb-2">Úklid chodeb a schodišť</h3>
+              <p>od <strong>60 Kč / m²</strong></p>
+              <p className="text-sm text-gray-500">Efektivní úklid s použitím moderních technologií</p>
+            </li>
+            <li className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="font-semibold mb-2">Strojové mytí podlah</h3>
+              <p>od <strong>100 Kč / m²</strong></p>
+              <p className="text-sm text-gray-500">Hloubkové strojové čištění pro dlouhodobou životnost</p>
+            </li>
+          </ul>
+
+          <p className="text-center text-gray-600 mt-4">
+            Ceny jsou orientační a mohou se lišit podle rozsahu práce, typu povrchu a úrovně znečištění.
+            Přesná cena bude stanovena po bezplatné prohlídce objektu nebo na základě Vaší poptávky.
+          </p>
+        </section>
       </main>
 
       {/* FOOTER */}
