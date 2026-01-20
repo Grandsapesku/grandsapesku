@@ -139,25 +139,50 @@ export default function GrandSapeskuWebsite() {
           </div>
         </section>
 
+        {/* SEKCE: PRO NEPLÁTCE DPH A STROJOVÉ MYTÍ */}
+        <section className="max-w-4xl mx-auto px-6 py-12 text-gray-700 text-lg leading-relaxed space-y-6 bg-gray-50 rounded-3xl shadow-lg">
+          <h2 className="text-2xl font-bold mb-4 text-center">Speciální podmínky pro neplátce DPH</h2>
+
+          <p>
+            I pokud nejste plátcem DPH, rádi Vám nabídneme profesionální úklid garáží a společných prostor
+            za <strong>speciálních podmínek</strong>. Přizpůsobíme cenovou nabídku Vašim potřebám, abyste
+            získali stejnou kvalitu úklidu, aniž byste museli řešit DPH.
+          </p>
+
+          <h3 className="text-xl font-semibold mt-6">Proč je strojové mytí garáží a podlah důležité</h3>
+          <p>
+            Podzemní garáže a parkovací plochy se rychle znečišťují – olejové skvrny, prach, písek a další nečistoty
+            mohou poškodit povrch podlah a způsobit nepříjemné zápachy. Naše profesionální strojové mytí:
+          </p>
+
+          <ul className="list-disc list-inside space-y-2">
+            <li>Odstraňuje olejové a tukové skvrny efektivně a bezpečně</li>
+            <li>Zachovává a prodlužuje životnost betonových a dlažebních povrchů</li>
+            <li>Zlepšuje bezpečnost a hygienu pro obyvatele a návštěvníky</li>
+            <li>Zajišťuje čistý a profesionální vzhled vašeho objektu</li>
+            <li>Strojové mytí podlah je rychlejší, efektivnější a šetrnější než ruční čištění</li>
+            <li>Optimalizuje údržbu garáží a snižuje dlouhodobé náklady na opravy a úklid</li>
+          </ul>
+
+          <p>
+            Díky našim zkušenostem, moderním strojům a profesionálnímu přístupu garantujeme rychlý a spolehlivý úklid,
+            který šetří Váš čas, chrání podlahy a zajišťuje dlouhodobou čistotu a bezpečnost Vaší nemovitosti.
+          </p>
+        </section>
+
         {/* SEO TEXT */}
         <section className="max-w-4xl mx-auto px-6 text-gray-700 text-lg leading-relaxed space-y-4">
           <h2 className="text-2xl font-bold mb-4">
             Profesionální úklid garáží a společných prostor v Praze
           </h2>
           <p>
-            Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na
-            profesionální úklid podzemních garáží, bytových domů a společných
-            prostor v Praze a okolí. Spolupracujeme se SVJ, správci nemovitostí a
-            developerskými projekty.
+            Společnost <strong>GrandSapesku s.r.o.</strong> se specializuje na profesionální úklid podzemních garáží, bytových domů a společných prostor v Praze a okolí. Spolupracujeme se SVJ, správci nemovitostí a developerskými projekty.
+            </p>
+          <p>
+            Nabízíme strojové mytí garáží, odstranění olejových skvrn, pravidelný úklid chodeb, schodišť, výtahů a vstupních prostor. Jsme plátci DPH, máme pojištění odpovědnosti a pracujeme na základě smlouvy.
           </p>
           <p>
-            Nabízíme strojové mytí garáží, odstranění olejových skvrn, pravidelný
-            úklid chodeb, schodišť, výtahů a vstupních prostor. Jsme plátci DPH,
-            máme pojištění odpovědnosti a pracujeme na základě smlouvy.
-          </p>
-          <p>
-            Pokud hledáte spolehlivou firmu na úklid garáží v Praze, neváhejte
-            nás kontaktovat. Rádi připravíme cenovou nabídku na míru.
+            Pokud hledáte spolehlivou firmu na úklid garáží v Praze, neváhejte nás kontaktovat. Rádi připravíme cenovou nabídku na míru.
           </p>
         </section>
 
