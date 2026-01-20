@@ -8,6 +8,12 @@ export default function GrandSapeskuWebsite() {
         </h1>
       </header>
 
+      <main className="max-w-6xl mx-auto p-8">
+        <p className="text-center text-lg">
+          Hlavní obsah stránky
+        </p>
+      </main>
+
     </div>
   );
 }
