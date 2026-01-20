@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function GrandSapeskuWebsite() {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900">
+    <div>
+      <h1>GrandSapesku funguje</h1>
     </div>
   );
 }
