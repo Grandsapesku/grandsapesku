@@ -261,13 +261,19 @@ export default function GrandSapeskuWebsite() {
             </li>
           </ul>
           <p className="text-center text-gray-600 mt-4">
-          DOPLŇKOVÉ SLUŽBY:
-- Odstraňování pavučin
-- Čištění elektrických rozvaděčů od prachu a dalších nečistot
-- Čištění hasicích přístrojů
-- Čištění koláren, sušáren a technických místností (místnosti, které se obvykle nečistí)
-- Otírání rozvodů stacionárních hasicích zařízení a dalších rozvodů
--Oboustranné čištění hvězdicových dveří. 
+             {/* JAK DOPLŇKOVÉ SLUŽBY */}
+        <section id="jak" className="grid gap-6">
+          <h2 className="text-3xl font-bold text-center">Jak spolupráce probíhá</h2>
+          <ol className="grid md:grid-cols-3 gap-6">
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">Čištění elektrických rozvaděčů od prachu a dalších nečistot</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">Odstraňování pavučin</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">Čištění hasicích přístrojů</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">Čištění koláren, sušáren a technických místností ( místnosti, které se obvykle nečistí )</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">Otírání rozvodů stacionárních hasicích zařízení a dalších rozvodů</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg text-center">Oboustranné čištění vjezdových bran / dveří </li>
+          </ol>
+        </section>
+          
             <li className="bg-white p-8 rounded-3xl shadow-lg">Ceny jsou orientační a mohou se lišit podle rozsahu práce, typu povrchu a úrovně znečištění</li>  
           </p>
         </section>
