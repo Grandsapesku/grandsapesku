@@ -240,8 +240,8 @@ export default function GrandSapeskuWebsite() {
               <p>lakovaný hladký povrch od <strong>8 až 10Kč / m²</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Hrubý betonový povrch</h3>
-              <p>od <strong>11 až 19 Kč / m²</strong></p>
+              <h3 className="font-semibold mb-2">Strojové mytí podlah</h3>
+              <p>Hrubý betonový povrch od <strong>11 až 19 Kč / m²</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Úklid v nákupních centrech, státních institucích a také (školy, univerzity, nemocnice atd.)</h3>
