@@ -268,8 +268,7 @@ export default function GrandSapeskuWebsite() {
 - Čištění koláren, sušáren a technických místností (místnosti, které se obvykle nečistí)
 - Otírání rozvodů stacionárních hasicích zařízení a dalších rozvodů
 -Oboustranné čištění hvězdicových dveří. 
-            
-            Ceny jsou orientační a mohou se lišit podle rozsahu práce, typu povrchu a úrovně znečištění.
+            <li className="bg-white p-8 rounded-3xl shadow-lg">Ceny jsou orientační a mohou se lišit podle rozsahu práce, typu povrchu a úrovně znečištění</li>  
           </p>
         </section>
       </main>
