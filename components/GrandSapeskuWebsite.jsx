@@ -127,10 +127,14 @@ export default function GrandSapeskuWebsite() {
         <section id="sluzby" className="grid gap-6">
           <h2 className="text-3xl font-bold text-center">Naše služby</h2>
           <ul className="grid md:grid-cols-2 gap-6">
-            <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Úklid podzemních garáží</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Strojové mytí podlah</li>
             <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Úklid společných prostory bytových domů</li>
             <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Úklid chodeb, schodišť a vstupů</li>
-            <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Strojové mytí podlah</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Úklid podzemních garáží</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Komplexní úklid nákupních center</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Komplexní úklid velkých i malých vládních budov</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Komplexní úklid kancelářských budov a jejich prostor</li>
+            <li className="bg-white p-8 rounded-3xl shadow-lg">✔️ Komplexní úklid školek, školy, univerzity, nemocnice atd.</li>
           </ul>
         </section>
 
@@ -236,7 +240,7 @@ export default function GrandSapeskuWebsite() {
               <p>lakovaný hladký povrch od <strong>9 až 13 Kč / m²</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Strojové mytí podlah nad 700 m² od</h3>
+              <h3 className="font-semibold mb-2">Strojové mytí podlah nad 700 m²</h3>
               <p>lakovaný hladký povrch od <strong>8 až 10Kč / m²</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
