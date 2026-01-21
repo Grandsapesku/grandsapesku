@@ -60,6 +60,7 @@ export default function GrandSapeskuWebsite() {
             <button onClick={() => scrollToSection("specialni")}>Speciální podmínky</button>
             <button onClick={() => scrollToSection("cenik")}>Orientační ceník</button>
             <button onClick={() => scrollToSection("sluzby")}>Naše služby</button>
+            <button onClick={() => scrollToSection("sluzby")}>DOPLŇKOVÉ SLUŽBY</button>
           </div>
 
           {/* MOBILE MENU BUTTON */}
@@ -79,7 +80,7 @@ export default function GrandSapeskuWebsite() {
             <button onClick={() => scrollToSection("faq")}>FAQ</button>
             <button onClick={() => scrollToSection("kontakt")}>Kontaktujte nás</button>
             <button onClick={() => scrollToSection("specialni")}>Speciální podmínky</button>
-            <button onClick={() => scrollToSection("cenik")}>DOPLŇKOVÉ SLUŽBYk</button>
+            <button onClick={() => scrollToSection("cenik")}>DOPLŇKOVÉ SLUŽBY</button>
           </div>
         )}
       </nav>
