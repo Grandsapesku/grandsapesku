@@ -232,24 +232,31 @@ export default function GrandSapeskuWebsite() {
           <h2 className="text-2xl font-bold text-center mb-6">Orientační ceník našich služeb</h2>
           <ul className="grid md:grid-cols-2 gap-6 text-gray-700 text-lg">
             <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Úklid podzemních garáží</h3>
-              <p>od <strong>90 Kč / m²</strong></p>
+              <h3 className="font-semibold mb-2">Strojové mytí garáží do 1000 m² od</h3>
+              <p>od <strong>9 Kč / m²</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Úklid společných prostor bytových domů</h3>
-              <p>od <strong>80 Kč / m²</strong></p>
+              <p>od <strong>290 Kč / hod</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Úklid chodeb a schodišť</h3>
-              <p>od <strong>60 Kč / m²</strong></p>
+              <p>od <strong>290 Kč / hod</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Strojové mytí podlah</h3>
-              <p>od <strong>100 Kč / m²</strong></p>
+              <h3 className="font-semibold mb-2">Strojové mytí podlah nad 1000 m² od</h3>
+              <p>od <strong>7 Kč / m²</strong></p>
             </li>
           </ul>
           <p className="text-center text-gray-600 mt-4">
             Ceny jsou orientační a mohou se lišit podle rozsahu práce, typu povrchu a úrovně znečištění.
+          DOPLŇKOVÉ SLUŽBY
+- Odstraňování pavučin
+- Čištění elektrických rozvaděčů od prachu a dalších nečistot
+- Čištění hasicích přístrojů
+- Čištění koláren, sušáren a technických místností (místnosti, které se obvykle nečistí)
+- Otírání rozvodů stacionárních hasicích zařízení a dalších rozvodů
+-Oboustranné čištění hvězdicových dveří.
           </p>
         </section>
       </main>
