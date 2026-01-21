@@ -261,9 +261,9 @@ export default function GrandSapeskuWebsite() {
             </li>
           </ul>
           <p className="text-center text-gray-600 mt-4">
-             {/* JAK DOPLŇKOVÉ SLUŽBY */}
+             {/* DOPLŇKOVÉ SLUŽBY */}
         <section id="jak" className="grid gap-6">
-          <h2 className="text-3xl font-bold text-center">Jak spolupráce probíhá</h2>
+          <h2 className="text-3xl font-bold text-center">DOPLŇKOVÉ SLUŽBY</h2>
           <ol className="grid md:grid-cols-3 gap-6">
             <li className="bg-white p-8 rounded-3xl shadow-lg text-center">Čištění elektrických rozvaděčů od prachu a dalších nečistot</li>
             <li className="bg-white p-8 rounded-3xl shadow-lg text-center">Odstraňování pavučin</li>
