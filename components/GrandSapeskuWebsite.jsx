@@ -236,20 +236,24 @@ export default function GrandSapeskuWebsite() {
               <p>lakovaný hladký povrch od <strong>9 až 13 Kč / m²</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Úklid společných prostor bytových domů</h3>
-              <p>od <strong>295 Kč / hod</strong></p>
-            </li>
-            <li className="bg-white p-6 rounded-2xl shadow-md">
-              <h3 className="font-semibold mb-2">Úklid chodeb a schodišť</h3>
-              <p>od <strong>295 Kč / hod</strong></p>
-            </li>
-            <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Strojové mytí podlah nad 700 m² od</h3>
               <p>lakovaný hladký povrch od <strong>8 až 10Kč / m²</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Hrubý betonový povrch</h3>
               <p>od <strong>11 až 19 Kč / m²</strong></p>
+            </li>
+            <li className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="font-semibold mb-2">Úklid v nákupních centrech, státních institucích a také (školy, univerzity, nemocnice atd.)</h3>
+              <p>Cenový plán  <strong>stanovíme po předběžné prohlídce práce a schůzce.</strong></p>
+            </li>
+            <li className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="font-semibold mb-2">Úklid společných prostor bytových domů</h3>
+              <p>od <strong>295 Kč / hod</strong></p>
+            </li>
+            <li className="bg-white p-6 rounded-2xl shadow-md">
+              <h3 className="font-semibold mb-2">Úklid chodeb a schodišť</h3>
+              <p>od <strong>295 Kč / hod</strong></p>
             </li>
           </ul>
           <p className="text-center text-gray-600 mt-4">
