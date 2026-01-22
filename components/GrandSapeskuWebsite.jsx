@@ -243,7 +243,7 @@ export default function GrandSapeskuWebsite() {
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Strojové mytí podlah nad 1000 m²</h3>
-              <p>lakovaný hladký povrch od <strong>3.50 až 7.50Kč / m²</strong></p>
+              <p>lakovaný hladký povrch od <strong>3.5 až 7.5 Kč / m²</strong></p>
             </li>
             <li className="bg-white p-6 rounded-2xl shadow-md">
               <h3 className="font-semibold mb-2">Strojové mytí podlah</h3>
