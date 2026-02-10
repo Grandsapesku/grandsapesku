@@ -52,7 +52,6 @@ export default function GrandSapeskuWebsite() {
           </div>
 
           <div className="hidden md:flex gap-6 font-semibold text-gray-700">
-            <button onClick={() => scrollToSection("sluzby")}>Naše služby</button>
             <button onClick={() => scrollToSection("proc")}>Proč spolupracovat</button>
             <button onClick={() => scrollToSection("jak")}>Jak spolupráce probíhá</button>
             <button onClick={() => scrollToSection("faq")}>FAQ</button>
