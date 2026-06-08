@@ -100,10 +100,10 @@ export default function GrandSapeskuWebsite() {
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
             Profesionální úklid garáží a společných prostory<br />Praha a okolí
           </h1>
-          <p className="text-xl text-gray-200">GrandSapesku S.R.O.</p>
+          <p className="text-xl text-gray-200">GrandSapesku s.r.o.</p>
           <p className="text-xl text-gray-200">IČO: 17957486</p>
           <p className="text-xl text-gray-200">DIČ: CZ17957486</p>
-          <p className="text-xl text-gray-200">Adresa sídla: Za hrází 467/467, 155 31 Praha 5 </p>
+          <p className="text-xl text-gray-200">Adresa sídla: Za hrází 467/467, 155 31 Praha 16 </p>
 
           <div className="mt-6 flex flex-wrap gap-4">
             <a
